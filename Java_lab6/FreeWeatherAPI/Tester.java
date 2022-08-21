@@ -14,8 +14,7 @@ public class Tester
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(WeatherService.class);
-        String[] str = {"1", "3", "4"};
-        Response<Weather> r1 = ws.getWeather((float)52.52, (float)13.41, str).execute();
+        Response<Weather> r1 = ws.getWeather((float)52.52, (float)13.41).execute();
         if (r1.errorBody() == null)
             System.out.println(r1.body().getWeather());
         else
