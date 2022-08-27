@@ -1,6 +1,6 @@
 
 
-// Homework starts on 100 line
+// Homework starts on 123 line
 
 package Java_lab8;
 import java.util.Iterator;
