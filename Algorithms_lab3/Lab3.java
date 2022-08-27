@@ -24,18 +24,19 @@ public class Lab3
     // Task 2
     public static int findElement (int[] arr1, int[] arr2, int pos)
     {
-        int a1 = 0, a2 = 0;
+        int counter1 = 0, counter2 = 0;
         for (int i = 0; i < pos - 1; ++i)
         {
-            if (arr1[a1] > arr2[a2])
-                ++a2;
+            if (arr1[counter1] > arr2[counter2])
+                ++counter2;
             else
-                ++a1;
+                ++counter1;
         }
-        if (a1 != arr1.length && a2 != arr2.length)
-            return Math.min(arr1[a1], arr2[a2]);
-        return (a1 == arr1.length) ? arr2[a2] : arr1[a1];
+        if (counter1 != arr1.length && counter2 != arr2.length)
+            return Math.min(arr1[counter1], arr2[counter2]);
+        return (counter1 == arr1.length) ? arr2[counter2] : arr1[counter1];
     }
+
     // Task 3
     public static int countElement(int[] arr, int el)
     {
